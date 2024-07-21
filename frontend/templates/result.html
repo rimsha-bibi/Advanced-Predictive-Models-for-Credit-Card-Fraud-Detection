@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('static/img/image8.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; /* Ensure no default margins */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            font-weight: bold;
+            color: #ff0000; /* Red color for alert */
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .result {
+            font-size: 18px; /* Adjusted font size */
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .result p {
+            font-weight: bold; /* Make labels bold */
+            color: #333; /* Dark grey text */
+        }
+        .btn {
+            margin-top: 20px; /* Adjust button margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Prediction Result</h2>
+        <div class="result">
+            {% if prediction == 1 %}
+                <p style="color: red;">Prediction: Fraudulent Transaction Detected</p>
+            {% else %}
+                <p style="color: green;">Prediction: Not a Fraudulent Transaction</p>
+            {% endif %}
+        </div>
+        <a href="/fraud-detection" class="btn btn-primary btn-block mt-4">Back to Form</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vision - Credit Card Fraud Detection</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 0px;
+        }
+        .hero-section {
+            background: url('static/img/image.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 80px 0;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+            z-index: 1;
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        .vision-section {
+            padding: 60px 0;
+            background-color: #f8f9fa; /* Light background for contrast */
+        }
+        .vision-section h2 {
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+        .vision-section .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .vision-section p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+{% extends 'header.html' %}
+
+{% block content %}
+
+<!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="display-4">Our Vision</h1>
+            <p class="lead">Innovating for a safer financial future.</p>
+        </div>
+    </div>
+
+    <!-- Vision Content -->
+    <div class="container vision-section">
+        <h2>Our Future Goals</h2>
+        <div class="content-container">
+            <p>At Team Epsilon, we envision a future where our Credit Card Fraud Detection System is at the forefront of combating financial fraud. Our goal is to leverage the latest advancements in artificial intelligence and machine learning to provide real-time, accurate fraud detection solutions. We are committed to continually improving our algorithms, expanding our capabilities, and enhancing the user experience to ensure the highest level of security for our clients' financial transactions.</p>
+            <p>We aim to build partnerships with financial institutions, integrate seamlessly with various payment systems, and set new standards in fraud prevention. Our dedication to innovation and excellence drives us to create a safer financial environment for everyone.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Credit Card Fraud Detection System. All rights reserved.</p>
+        </div>
+    </footer>
+{% endblock %}
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
