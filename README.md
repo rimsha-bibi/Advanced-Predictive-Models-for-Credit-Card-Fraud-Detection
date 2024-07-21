@@ -1,7 +1,7 @@
 # Advanced-Predictive-Models-for-Credit-Card-Fraud-Detection
 Advanced predictive models for detecting credit card fraud using machine learning techniques.
 
-ML Team Epsilon ITSOLERA Project 02
+ITSOLERA: ML TEAM EPSILON Project: 02
 
 Title: Advanced Predictive Models for Credit Card Fraud
 
